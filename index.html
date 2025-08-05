@@ -1281,6 +1281,8 @@ write using if
 For example, let’s say you want to write a weekday name based on
 the weekday number
 Here’s how you can write it:
+
+```
 let weekdayNumber = 1;
 if (weekdayNumber === 0) {
  console.log("Sunday");
@@ -1299,9 +1301,13 @@ console.log("Saturday");
 } else {
 console.log("The weekday number is invalid");
 }
+```
+
 I don’t know about you, but the code above sure looks cumbersome
 to me! Although there’s nothing wrong with the code above, you
 can make it prettier with switch:
+
+```
 let weekdayNumber = 1;
 switch (weekdayNumber) {
 case 0:
@@ -1327,17 +1333,23 @@ console.log("Saturday");
 break;
 default:
 } console.log("The weekday number is invalid");
+```
+
 Loop Flow
 As you program an application in JavaScript, you’ll often need to
 write a piece of code that needs to be executed repeatedly.
 Let’s say you want to write a program that prints the numbers 1 to
 10 in the console. You can do it by calling console.log 10 times like
 this:
+
+```
 console.log(1);
 console.log(2);
 console.log(3);
 console.log(4);
 console.log(5);
+```
+
 // and so on..
 This works, but there’s a better way to write this kind of repetitive
 task.
@@ -1370,29 +1382,45 @@ a code block that will be executed by JavaScript as long as the
 `condition` expression returns true.
 You can identify which expression is which by paying attention to
 the semicolon (;) which ends the statement.
+
+```
 for ( [initialization]; [condition]; [arithmetic expression]) {
 // As long as condition returns true,
 // This block will be executed repeatedly
 }
+```
+
 The arithmetic expression can be an increment (++) or a decrement
 (--) expression. It is run once each time the execution of the code
 inside the curly brackets end:
+
+```
 for (let x = 10; x >= 1; x--) {
 console.log(x);
 }
+```
+
 Or you can also use shorthand arithmetic operators like += and -=
 as shown below:
+
+```
 // for statement with shorthand arithmetic expression
 for (let x = 1; x < 20; x += 3) {
  console.log(x);
 }
+```
+
 Here, the x will be incremented by 3 each time the loop is executed.
 Once the loop is over, JavaScript will continue to execute any code
 you write below the for body:
+
+```
 for (let x = 1; x < 2; x++) {
 } console.log(x);
 console.log("The for loop has ended");
 console.log("Continue code execution");
+```
+
 When to Use a for Loop
 The for loop is useful when you know how many times you need
 to execute a repetitive task.
@@ -1403,6 +1431,8 @@ need to find how many times the coin lands on heads when tossed
 tails counter
 ​▪​When the number is 0.5 and up you must increment the heads
 counter
+
+```
 let heads = 0;
 let tails = 0;
 for (x = 1; x <= 10; x++) {
@@ -1415,6 +1445,8 @@ heads++;
 console.log("Tossed the coin ten times");
 console.log(`Number of heads: ${heads}`);
 console.log(`Number of tails: ${tails}`);
+```
+
 The example above shows where the for loop offers the most
 effective approach.
 Now let’s see an alternative exercise about coin flips where the for
@@ -1429,17 +1461,25 @@ The while statement or while loop is used to run a block of code as
 long as the condition evaluates to true.
 You can define the condition and the statement for the loop as
 follows:
+
+```
 while (condition) {
 statement;
 }
+```
+
 Just like the for loop, the while loop is used to execute a piece of
 code over and over again until it reaches the desired condition.
 See the example below:
+
+```
 let i = 0;
 while (i < 6) {
 console.log(`The value of i = ${i}`);
 i++;
 }
+```
+
 Here, the while loop will repeatedly print the value of i as long as i
 is less than 6. In each iteration, the value of i is incremented by 1
 until it reaches 6 and the loop terminates.
@@ -1447,10 +1487,14 @@ Keep in mind that you need to include a piece of code that
 eventually turns the evaluating condition to false or the while loop
 will be executed forever. The example below will cause an infinite
 loop:
+
+```
 let i = 0;
 while (i < 6) {
 console.log(`The value of i = ${i}`);
 }
+```
+
 Because the value of i never changes, the while loop will go on
 forever!
 When to Use a While Loop
@@ -1464,6 +1508,8 @@ Find out how many times you need to flip a coin until it lands
 on heads.
 You also need to show how many times you flip the coin until it
 lands on heads:
+
+```
 let flips = 0;
 let isHeads = false;
 while (!isHeads) {
@@ -1471,6 +1517,8 @@ flips++;
 isHeads = Math.random() < 0.5;
 }
 console.log(`It took ${flips} flips to land on heads.`);
+```
+
 Here, the condition isHead = Math.random() < 0.5 simulates the
 flipping of a fair coin. When the result is true, it means the coin
 landed on heads and the loop will exit.
@@ -1504,13 +1552,21 @@ Creating a function starts with typing the function keyword
 followed by the function name, a pair of round brackets, and then a
 pair of curly brackets.
 Here’s an example:
+
+```
 function greet() {
 // function body here
 console.log("Hello!");
 }
+```
+
 To call a function, you need to specify the function name followed
 by parentheses:
+
+```
 greet(); // Hello!
+```
+
 The code inside the function is executed when you call that
 function.
 Function Parameters and Arguments
@@ -1520,36 +1576,60 @@ You can specify parameters in the function header, inside the
 parentheses.
 The following example shows a function that has one parameter
 called name:
+
+```
 function greet(name) {
 // function body
 }
+```
+
 How you use that name parameter inside the function is up to you.
 You can use the parameter inside the print() function as follows:
+
+```
 function greet(name) {
 console.log(`Hello, ${name}!`);
 console.log("Nice weather today, right?");
 }
+```
+
 Now whenever you need to call the greet() function, you need to
 pass an input to fill in the name parameter.
 The input you passed to fill a parameter is called an argument, and
 here’s how to do it:
+
+```
 greet("Peter");
+```
+
 The 'Peter' string inside the parentheses when calling the greet()
 function will be passed as the name parameter.
 Run the code to receive this output:
+
+```
 Hello, Peter!
+```
+
 Nice weather today, right?
 You can have more than one parameter when defining the
 function, but you need to split each parameter with a comma as
 follows:
+
+``
 function greet(name, weather) {
 console.log(`Hello, ${name}!`);
 console.log(`It's ${weather} today, right?`);
 }
 greet("Nathan", "rainy");
+```
+
 Output:
+
+```
 Hello, Nathan!
 It's rainy today, right?
+```
+
 When you specify two parameters in the function header, you need
 to pass two arguments. If you call the function without passing the
 arguments then the value will be undefined.
@@ -1569,14 +1649,20 @@ When defining a function, you can set a default value for any
 parameter in that function.
 For example, the name parameter in the function below is a default
 parameter:
+
+```
 function greet(name = "Nathan") {
 console.log(`Hello, ${name}!`);
 console.log("Nice weather today, right?");
 }
+```
+
 Here, the default value 'Nathan' will be used when no value or
 undefined is passed for the name parameter.
 You can test this by calling the greet() function without an
 argument as follows:
+
+```
 greet();
 greet("Jack");
 Output:
@@ -1584,11 +1670,16 @@ Hello, Nathan!
 Nice weather today, right?
 Hello, Jack!
 Nice weather today, right?
+```
+
 Any function you define can have a mix of default and non-default
 parameters.
+
 Here’s another example of a function that has one default
 parameter called name and one non-default parameter called
 weather:
+
+```
 function greet(weather, name = "Nathan") {
 console.log(`Hello, ${name}!`);
 console.log(`It's ${weather} today, right?`);
@@ -1597,6 +1688,8 @@ greet("sunny");
 Output:
 Hello, Nathan!
 It's sunny today, right?
+```
+
 Notice that the weather parameter was placed in front of the name
 parameter. This is for convenience so that you don’t need to specify
 the default parameter.
@@ -1604,11 +1697,15 @@ If you place the non-default parameter after the default parameter,
 then you need to pass a value to the name parameter to get to the
 weather parameter.
 Consider the example below:
+
+```
 function greet(name = "Nathan", weather) {
 console.log(`Hello, ${name}!`);
 console.log(`It's ${weather} today, right?`);
 }
 greet(undefined, "sunny");
+```
+
 To pass an argument to the weather parameter, we need to pass
 undefined or any value for the name parameter first.
 This is why it’s better to specify non-default parameters in front of
@@ -1619,18 +1716,26 @@ between undefined as the "default" empty value and null as the
 "intentional" empty value.
 When you pass undefined to a function that has a default
 parameter, the default parameter will be used:
+
+```
 function greet(name = "John"){
 console.log(name);
 }
 greet(undefined); // John
+```
+
 As you can see, JavaScript prints the default parameter value John
 when you pass undefined to the function.
 But when you pass null to the function, the default parameter will
 be ignored:
+
+```
 function greet(name = "John"){
 console.log(name);
 }
 greet(null); // null
+```
+
 This is one of the common mistakes that beginners make when
 learning JavaScript. When you use the value null, JavaScript will
 think you want that value to be empty, so it doesn’t replace the
