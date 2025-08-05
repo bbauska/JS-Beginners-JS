@@ -1,14 +1,12 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ index.html of JS-Beginners-JS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <h2 align="center">JS for Beginners (JS)</h2>
 <br/>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w3cx logo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ js beginners logo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/JS-Beginners-logo.jpg"
-  style="width:35%"
-  align="center"
+  style="width:350px;"
   title="JavaScript for Beginners logo"
   alt="JavaScript for Beginners logo." />
 </p>
@@ -84,8 +82,7 @@ your operating system as shown below:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image001.jpg"
-  style="width:35%"
-  align="center"
+  style="width:350px;"
   title="Install VS Code"
   alt="Install VS Code." />
 <h4>Figure 1. Install VSCode</h4>
@@ -130,110 +127,104 @@ You can write the content below:</p>
 </html>
 ```
 
-The HTML code above is just a standard template for a new HTML document, in which we set 
-the document type with DOCTYPE and the language with lang.
+<p>The HTML code above is just a standard template for a new HTML document, in which we set 
+the document type with DOCTYPE and the language with lang.</p>
 
-Inside the &lt;head&gt; tag, we defined basic information about this document, such as the 
+<p>Inside the &lt;head&gt; tag, we defined basic information about this document, such as the 
 character encoding with charset, the viewport and default zoom level to 1.0, the title of 
-the document, and the &lt;script&gt; tag to load a JavaScript file.
+the document, and the &lt;script&gt; tag to load a JavaScript file.</p>
 
-Notice that the &lt;script&gt; tag above contains the defer attribute. This attribute is 
+<p>Notice that the &lt;script&gt; tag above contains the defer attribute. This attribute is 
 added to ensure that the script will be processed after the HTML document has been loaded 
-by the browser.
+by the browser.</p>
 
-Inside the body tag, we just add a heading &lt;h1&gt; tag with the 'Hello World!' text.
+<p>Inside the body tag, we just add a heading &lt;h1&gt; tag with the 'Hello World!' text.</p>
 
-In your VSCode, you should see different parts of your code highlighted with different 
+<p>In your VSCode, you should see different parts of your code highlighted with different 
 colors. This is a feature of the text editor called syntax highlighting, and it’s really 
-useful to help you distinguish different parts of the code.
+useful to help you distinguish different parts of the code.</p>
 
-Save the changes to the file, and the next step is to run this file using a local server.
-
+<p>Save the changes to the file, and the next step is to run this file using a local server.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Install Live Server Extension</h4>
 
-VSCode extensions are small programs created to enhance the
+<p>VSCode extensions are small programs created to enhance the
 capability of VSCode. One extension that’s very useful is the Live
 Server extension, which allows developers to run a local server to
-test their code.
+test their code.</p>
 
-We’re going to use the Live Server extension to run our HTML file.
+<p>We’re going to use the Live Server extension to run our HTML file.
 To install extensions, click the Extension icons that look like a
-puzzle of blocks or press Ctrl+Shift+X or Command+Shift+X.
+puzzle of blocks or press Ctrl+Shift+X or Command+Shift+X.</p>
 
-You should see the extension sidebar. At the top of the sidebar, type
+<p>You should see the extension sidebar. At the top of the sidebar, type
 in 'live server' and select the one that’s created by Ritwick Dey. See
-the picture below:
-
+the picture below:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Figure 2. Install Live Server</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Explanation of the image above:
-	1. Click the Extensions icon in the Activity Bar
-	2. Search for 'live server' and select the one created by Ritwick Dey
-	3. Install the extension
+<p>Explanation of the image above:</p>
+<ol type="1">
+  <li>Click the Extensions icon in the Activity Bar</li>
+  <li>Search for 'live server' and select the one created by Ritwick Dey</li>
+  <li>Install the extension</li>
+</ol>
+<p>Once installed, go back to the Explorer tab by clicking on the Files icon at the top of the 
+Activity Bar.</p>
 
-Once installed, go back to the Explorer tab by clicking on the Files icon at the top of the 
-Activity Bar.
+<p>Here, you need to right-click on the index.html file and select Open with Live Server from 
+the context menu.</p>
 
-Here, you need to right-click on the index.html file and select Open with Live Server from 
-the context menu.
-
-The Live Server should start a local server and open your browser automatically as follows:
-
+<p>The Live Server should start a local server and open your browser automatically as follows:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Figure 3. Live Server Running</h4>
 
 <p>If you see the image above, congratulations! You now have a local server to help you develop 
 your JavaScript application.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Creating the JavaScript File</h3>
 
-Now that we have a local server running, the last thing we need is to create a JavaScript file 
-and print something to the console to know that it’s working correctly.
+<p>Now that we have a local server running, the last thing we need is to create a JavaScript file 
+and print something to the console to know that it’s working correctly.</p>
 
-In your VSCode window, right-click on the Explorer sidebar and write a new file named script.js.
+<p>In your VSCode window, right-click on the Explorer sidebar and write a new file named script.js.</p>
 
-Inside the file, write the following code:
+<p>Inside the file, write the following code:</p>
 
 ```
 console.log('Learning JavaScript!');
 ```
 
-Live Server automatically reloads the browser when it detects any
+<p>Live Server automatically reloads the browser when it detects any
 change in your files. Back to the browser, you need to open the
 browser console by pressing the Command+Option+J or Control
-+Shift+J
++Shift+J</p>
 
-You should see the words printed in the console as follows:
-
+<p>You should see the words printed in the console as follows:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Figure 4. Open Browser Console
+<p>Figure 4. Open Browser Console</p>
 
-With this, you’ve completed your first JavaScript application. Well
-done!
+<p>With this, you’ve completed your first JavaScript application. Well done!</p>
 
-The console.log() is a keyword used to print output to the console.
+<p>The console.log() is a keyword used to print output to the console.</p>
 
-It consists of the console keyword, which is an object that gives
-access to the browser console.
+<p>It consists of the console keyword, which is an object that gives access to the browser 
+console.</p>
 
-The log keyword is a method used to instruct JavaScript to print a
-message. By now, you must be wondering what is an object and a
-method.
+<p>The log keyword is a method used to instruct JavaScript to print a message. By now, 
+you must be wondering what is an object and a method.</p>
 
-Don’t worry! We’re going to learn more about functions and objects
-later. For now, just remember that the console.log() keyword is
-used to print things to the console. This keyword will be used
-frequently in the coming chapters.
-
+<p>Don’t worry! We’re going to learn more about functions and objects later. For now, 
+just remember that the console.log() keyword is used to print things to the console. 
+This keyword will be used frequently in the coming chapters.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Writing Comments</h3>
 
-In programming, comments are text we use to communicate the context of the code written in the file.
+<p>In programming, comments are text we use to communicate the context of the code 
+written in the file.</p>
 
-To write a comment in JavaScript, you need to add two forward slashes // before the comment as shown below:
+<p>To write a comment in JavaScript, you need to add two forward slashes // before the 
+comment as shown below:</p>
 
 ```
 // This is a comment
@@ -243,10 +234,10 @@ console.log("Hello World!");
 console.log("I'm learning JavaScript");
 ```
 
-Comments are ignored by the language processor, so you can use comments to disable some code 
-without having to delete that code.
+<p>Comments are ignored by the language processor, so you can use comments to disable some code 
+without having to delete that code.</p>
 
-The code below shows how to disable the second print statement:
+<p>The code below shows how to disable the second print statement:</p>
 
 ```
 console.log("Hello World!");
@@ -256,45 +247,45 @@ console.log("Hello World!");
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Summary</h3>
 
-In this chapter, we’ve explored the origins of JavaScript, installed the required tools to code 
-in JavaScript, and run our first JavaScript application.
+<p>In this chapter, we’ve explored the origins of JavaScript, installed the required tools to code 
+in JavaScript, and run our first JavaScript application.</p>
 
-We’ve also learned how to write comments in our JavaScript file. In the next chapter, we’re going 
-to learn about variables.
-
+<p>We’ve also learned how to write comments in our JavaScript file. In the next chapter, we’re going 
+to learn about variables.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="#ch2">Chapter 2: JavaScript Variables</h2>
 
-Before explaining what a variable is, I want you to change the code
-you’ve written in the script.js file.
+<p>Before explaining what a variable is, I want you to change the code
+you’ve written in the script.js file.</p>
 
-Change the code in that file as follows:
+<p>Change the code in that file as follows:</p>
 
 ```
 let message = "Learning JavaScript!"
 console.log(message)
 ```
 
-Go back to the browser console, and you’ll see the same output as
+<p>Go back to the browser console, and you’ll see the same output as
 when you write the 'Learning JavaScript!' message directly inside
-the console.log() function. How can this be?
+the console.log() function. How can this be?</p>
 
-This is because the message declared in the code above is a
-variable.
+<p>This is because the message declared in the code above is a variable.</p>
 
-In programming, a variable is simply a name that you give to a
+<p>In programming, a variable is simply a name that you give to a
 value so that you can access that value later. You can think of a
 variable as a label that can be tagged to a certain value, so you can
-refer to the value using the label.
-To declare a variable, you need to type the keyword let followed
+refer to the value using the label.</p>
+
+<p>To declare a variable, you need to type the keyword let followed
 by the variable name.
 The first line in the code tells JavaScript to associate the message
 variable with the value 'Learning JavaScript!':
-let message = "Learning JavaScript!"
-In the second line, JavaScript is instructed to print the value of
+let message = "Learning JavaScript!"</p>
+
+<p>In the second line, JavaScript is instructed to print the value of
 message, and that’s exactly what it does.
 You can change the value of your variable by re-assigning another
-value as follows:
+value as follows:</p>
 
 ```
 let message = "Learning JavaScript!"
@@ -303,95 +294,109 @@ message = "Nice weather!"
 print(message)
 ```
 
-Run the file and you’ll see two lines printed as the output:
+<p>Run the file and you’ll see two lines printed as the output:</p>
 
-Learning JavaScript!
+<p>Learning JavaScript!</p>
 
-Nice weather!
-Variables are used to reference data so that you can use the same
-data multiple times in your program.
-Next, let’s see some rules for naming variables in JavaScript.
-Variable Naming
-JavaScript has a few naming rules that you need to know to avoid
-naming errors.
-Variable names can only contain alphabet letters, numbers, and
+<p>Nice weather!</p>
+
+<p>Variables are used to reference data so that you can use the same
+data multiple times in your program.</p>
+<p>Next, let’s see some rules for naming variables in JavaScript.</p>
+
+<p>Variable Naming</p>
+<p>JavaScript has a few naming rules that you need to know to avoid
+naming errors.</p>
+
+<p>Variable names can only contain alphabet letters, numbers, and
 underscores (_). This means you can name your variable message,
-message_1, message_2.
-The first character of the variable name must not be a number.
-message_1 is okay. 1_message is not.
-You can’t use reserved keywords such as console because they are
+message_1, message_2.</p>
+
+<p>The first character of the variable name must not be a number.
+message_1 is okay. 1_message is not.</p>
+
+<p>You can’t use reserved keywords such as console because they are
 used by JavaScript to do certain things. There are many other
 keywords used by JavaScript that you’ll learn in the following
-sections such as if, for, and while.
-Variable names are case-sensitive, which means Message, MESSAGE,
+sections such as if, for, and while.</p>
+
+<p>Variable names are case-sensitive, which means Message, MESSAGE,
 and message can be used to create three different variables. But of
 course, I don’t recommend using similar names as it causes
-confusion.
-Sometimes, you need more than one word to declare a variable
+confusion.</p>
+
+<p>Sometimes, you need more than one word to declare a variable
 name. JavaScript has two naming conventions that are used
-worldwide:
+worldwide:</p>
+
 1. camelCase
 2. snake_case
-Camel case is a naming convention that uses an uppercase letter
-for the first character for subsequent words. Here’s an example:
+
+<p>Camel case is a naming convention that uses an uppercase letter
+for the first character for subsequent words. Here’s an example:</p>
+
 let myAwesomeVariable
-The snake case naming convention uses an underscore to separate
-words. Here’s an example:
+
+<p>The snake case naming convention uses an underscore to separate
+words. Here’s an example:</p>
+
 let my_awesome_variable
-Both are acceptable naming conventions, but you should stick to
-one of them in your code to avoid confusion.
-Constant Variables
-There are times when you need to store a value that must not be
-changed in a variable.
-A constant variable is a variable that doesn’t change its value as
+
+<p>Both are acceptable naming conventions, but you should stick to
+one of them in your code to avoid confusion.</p>
+
+<p>Constant Variables</p>
+
+<p>There are times when you need to store a value that must not be
+changed in a variable.</p>
+<p>A constant variable is a variable that doesn’t change its value as
 long as the program is running. In JavaScript, a constant variable is
-declared using the const keyword.
-The following shows how to declare 2 constants in JavaScript:
+declared using the const keyword.</p>
+
+<p>The following shows how to declare 2 constants in JavaScript:</p>
 
 ```
 const FILE_SIZE_LIMIT = 2000
 const MAX_SPEED = 300
 ```
 
-If you try to reassign a constant variable, you’ll get an error:
+<p>If you try to reassign a constant variable, you’ll get an error:</p>
 
 ```
 const FILE_SIZE_LIMIT = 2000
 FILE_SIZE_LIMIT = 3000 // Error!
 ```
 
-The naming convention for a constant is to use all uppercase
+<p>The naming convention for a constant is to use all uppercase
 letters, although using lowercase letters also works. The all-
 uppercase standard makes constants stand out more when you
-read the code.
+read the code.</p>
 
-Summary
+<p>Summary</p>
 
-In this chapter, we’ve explored how we can create variables in
+<p>In this chapter, we’ve explored how we can create variables in
 JavaScript using the let and const keywords. We’ve also learned
-how to access a variable by passing the variable name.
+how to access a variable by passing the variable name.</p>
 
-Learning how to use variables to make a program that does what
+<p>Learning how to use variables to make a program that does what
 you want it to do is one of the most important skills you can have
-as a programmer.
+as a programmer.</p>
 
-But before you learn more about how to make use of variables, let’s
-learn about data types in JavaScript.
-
-
+<p>But before you learn more about how to make use of variables, let’s
+learn about data types in JavaScript.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Chapter 3: Basic Data Types</h2>
 
-Data types are simply definitions for different types of data known
-to a programming language.
+<p>Data types are simply definitions for different types of data known
+to a programming language.</p>
 
-A data type contains specifications about what you can and can’t
-do with that data.
+<p>A data type contains specifications about what you can and can’t
+do with that data.</p>
 
-To show you a brain-friendly example, I’m sure you agree that 2 +
-2 = 4?
+<p>To show you a brain-friendly example, I’m sure you agree that 2 +
+2 = 4?</p>
 
-Well, JavaScript also agrees with that:
+<p>Well, JavaScript also agrees with that:</p>
 
 ```
 console.log(2 + 2);
@@ -1925,10 +1930,14 @@ Only you, as the human, knows there’s a relation between the two
 variables.
 This is where an object is useful. You can declare a single book
 object and store the data in a key:value format:
+
+```
 let myBook = {
 title: "Beginning JavaScript",
 author: "Nathan Sebhastian",
 };
+```
+
 An object is declared using the curly brackets {}, and each item
 inside the brackets is written in the key:value format.
 An object item is also known as a property, with the key as property
@@ -1941,6 +1950,8 @@ console.log(myBook.title); // Beginning JavaScript
 You can assign a string or numbers as the key of an item, and you
 can assign any type of data as the value, including a number and a
 function:
+
+```
 let myBook = {
 title: "Beginning JavaScript",
 author: "Nathan Sebhastian",
@@ -1952,6 +1963,8 @@ console.log(`Book author: ${this.author}`);
 };
 // call the function
 myBook.describe();
+```
+
 In the code above, the describe key or property is a method that
 prints the title and author value from the object. You call the
 method by adding parentheses after the method name.
@@ -1976,7 +1989,11 @@ But when you’re calling a method, you need to specify the object
 from which you call the function.
 For example, when calling the describe() method from the myBook
 object:
+
+```
 myBook.describe();
+```
+
 The term method gives more information to you as the person who
 works with the program, allowing you to differentiate between
 "functions" and "functions in an object" without having to see the
@@ -1988,26 +2005,36 @@ To access the value of an object, you can use either the dot notation
 . or the square brackets [] notation.
 Here’s an example of using the dot notation to access the object
 properties:
+
+```
 let myBook = {
 title: "Beginning JavaScript",
 author: "Nathan Sebhastian",
 };
 console.log(myBook.title);
 console.log(myBook.author);
+```
+
 And here’s how you use the square brackets to access the same
 properties:
+
+```
 let myBook = {
 title: "Beginning JavaScript",
 author: "Nathan Sebhastian",
 };
 console.log(myBook["title"]);
 console.log(myBook["author"]);
+```
+
 Keep in mind that you need to wrap the property name in quotes
 like a string, or JavaScript will think you’re passing a variable
 inside the square brackets.
 How to add a new property to the object
 You can assign a new property to the object using either the dot
 notation or the square brackets like this:
+
+```
 let myBook = {
 title: "Beginning JavaScript",
 author: "Nathan Sebhastian",
@@ -2024,11 +2051,15 @@ author: 'Nathan Sebhastian',
 year: 2023,
 publisher: 'CodeWithNathan'
 }
+```
+
 You can add as many properties as you need to the same object.
 How to modify object properties
 To modify an existing property, you need to specify an existing
 object property using either the dot or square brackets notation
 followed by the assignment operator as follows:
+
+```
 let myBook = {
 title: "Beginning JavaScript",
 author: "Nathan Sebhastian",
@@ -2041,10 +2072,14 @@ Output:
 title: 'Beginning JavaScript',
 author: 'John Doe'
 }
+```
+
 As you can see, the author property value has been changed.
 How to delete object properties
 To delete a property from your object, you need to use the delete
 operator as follows:
+
+```
 let myBook = {
 title: "Beginning JavaScript",
 author: "Nathan Sebhastian",
@@ -2053,6 +2088,8 @@ delete myBook.author;
 console.log(myBook);
 Output:
 { title: 'Beginning JavaScript' }
+```
+
 When you try to access the deleted property, you will get the
 undefined value.
 How to check if a property exists in an
@@ -2063,6 +2100,8 @@ propertyName in myObject
 The in operator returns true if the propertyName exists in your
 object.
 See the example below:
+
+```
 let person = {
 firstName: "Nathan",
 lastName: "Sebhastian"
@@ -2071,6 +2110,8 @@ lastName: "Sebhastian"
 console.log('firstName' in person); // true
 // check if age exists
 console.log('age' in person); // false
+```
+
 Summary
 In this chapter, you’ve learned about the object data type, which is
 a special data type that can hold many properties and methods.
@@ -2086,14 +2127,26 @@ or a mix of them all.
 To create an array, you need to use the square brackets [] and
 separate the items using a comma.
 Here’s how to create a list of strings:
+
+```
 let birds = ['Owl', 'Eagle', 'Parrot', 'Falcon'];
+```
+
 You can think of an array as a list of items, each stored in a locker
 compartment:
 Figure 5. Array Illustration
 You can also declare an empty array without any value:
+
+```
 let birds = [];
+```
+
 An array can also have a mix of values like this:
+
+```
 let mixedArray = ['Bird', true, 10, 5.17]
+```
+
 The array above contains a string, a boolean, an integer, and a
 float.
 Array Index Position
@@ -2105,76 +2158,120 @@ Figure 6. Array Index Illustration
 To access or change the value of an array, you need to add the
 square brackets notation [x] next to the array name, where x is the
 index number of that element. Here’s an example:
+
+```
 // Access the first element in the array
 myArray[0];
 // Access the second element in the array
 myArray[1];
+```
+
 Suppose you want to print the string 'Owl' from the birds array.
 Here’s how you can do it.
+
+```
 let birds = ['Owl', 'Eagle', 'Parrot', 'Falcon'];
 console.log(birds[0]); // Owl
 console.log(birds[1]); // Eagle
+```
+
 There you go. You need to type the name of the array, followed by
 the index number wrapped in square brackets.
 You can also assign a new value to a specific index using the
 assignment operator.
 Let’s replace 'Parrot' with 'Vulture':
+
+```
 let birds = ['Owl', 'Eagle', 'Parrot', 'Falcon'];
 birds[2] = 'Vulture';
 console.log(birds);
 // ['Owl', 'Eagle', 'Vulture', 'Falcon']
+```
+
 Because the array index starts from zero, the value 'Parrot' is
 stored at index 2 and not 3.
 Array Methods and Properties
 Since array is an object, you can call methods and properties that
 are provided by JavaScript to manipulate the array values.
 To get the size of an array, you can access the length property:
+
+```
 let fishes = ['Salmon', 'Goldfish', 'Tuna'];
 console.log(fishes.length); // 3
+```
+
 Next, you can use the push() method to add an item to the end of
 the array:
+
+```
 let birds = ['Owl', 'Eagle'];
 birds.push('Sparrow');
 console.log(birds);
 // ['Owl', 'Eagle', 'Sparrow']
+```
+
 Another method called pop() can be used to remove an item from
 the end of an array:
+
+```
 let birds = ['Owl', 'Eagle', 'Sparrow'];
 birds.pop();
 console.log(birds);
 // ['Owl', 'Eagle']
+```
+
 The unshift() method can be used to add an item from the front at
 index 0:
+
+```
 let fishes = ['Salmon', 'Goldfish', 'Tuna'];
 fishes.unshift('Sardine');
 console.log(fishes);
 // ['Sardine', 'Salmon', 'Goldfish', 'Tuna']
+```
+
 On the other hand, the shift() method can be used to remove an
 item from index 0:
+
+```
 let fishes = ['Salmon', 'Goldfish', 'Tuna'];
 fishes.shift();
 console.log(fishes);
 // ['Goldfish', 'Tuna']
+```
+
 The indexOf() method can be used to find and return the index of
 an item in the array.
 The method will return -1 when the item isn’t found inside the
 array:
+
+```
 let fishes = ['Salmon', 'Goldfish', 'Tuna'];
 let pos = fishes.indexOf('Tuna');
 console.log(pos); // 2
+```
+
 To iterate over an array, you can use the forEach() method. The
 method accepts a function that will be executed for each element
 in the array.
 This method will pass the array’s element and index position to the
 function. Here’s an example of using the method:
+
+```
 let fishes = ['Salmon', 'Goldfish', 'Tuna'];
 fishes.forEach(function (element, index) {
 console.log(`${index}: ${element}`);
 });
+```
+
 The output will be:
+
+```
 0: Salmon
 1: Goldfish
 2: Tuna
+```
+
 And that’s how you iterate over an array using the forEach()
 method.
 Summary
@@ -2186,46 +2283,60 @@ add a key for each value.
 
 <h2>Chapter 9 - The Document Object</h2>
 Model (DOM) Introduction
+
 Before we dive into the lesson, let’s recap what we know about the
 web browser and HTML documents.
+
 When we want to build a web page, we create an HTML document
 filled with HTML, CSS, and JavaScript.
 These three technologies are used together like a team, each
 playing a different role to build what we see in our web browser.
+
 HTML is a markup language used to define the structure and
 content of the page. The tags we used like <head>, <body>, and
 <button> have meanings, and the browser will process these tags,
 rendering the content of the document to the screen
+
 Figure 7. HTML Only Website
+
 But the HTML alone produces a very boring and generic-looking
 page. CSS was created to enable people to change the way the
 HTML tags are represented on the browser.
+
 By using CSS, you can make a button displayed in a color of your
 choice, or a text input box with a rounded border, making them
 more appealing and modern.
+
 Figure 8. A Website Styled With CSS
+
 HTML and CSS were great partners, but even then, a web page is
 still just a passive thing. Once the browser process the content and
 render it, you can’t edit the page in any way.
+
 You can’t change the background and text color of the page (the
 dark mode, for example) you can’t create cool animations, turn on
 the microphone or webcam, and retrieve data from another
 website to display on the page after a click.
 JavaScript is the programming language that’s supported by the
 browser, and it fills the gap left open by HTML and CSS.
+
 In short, JavaScript breathes life into static websites, turning them
 dynamic. It allows a website to interact with the user, respond to
 their actions, and dynamically update the content without
 requiring a page reload.
+
 The DOM Explained
 So how come JavaScript can do things that HTML and CSS can’t do?
 Well, the answer is that JavaScript has the ability to manipulate the
 Document Object Model, or the DOM for short.
+
 The DOM is a hierarchical structure composed of objects that make
 up a web page. Web browsers then expose this DOM so that you
 can change the page structure, style, and content using JavaScript.
 For example, suppose you have the following HTML content in
 your document:
+
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -2238,67 +2349,88 @@ your document:
 <p>This is a paragraph element</p>
 </body>
 </html>
+```
+
 The DOM graph generated by the HTML document above is as
 follows. I’m going to explain what the graph means below:
+
 Figure 9. Example DOM Graph
+
 The DOM looks like a tree structure with a set of connected nodes.
 These nodes are objects that you can access using JavaScript. The
 html node and its children are the content of your document.
 For now, let’s focus on the window and document objects.
+
 The Window Object
+
 The window object is the root of the DOM tree, and this object is used
 to instruct the browser to do tasks like:
-​▪​Displaying an alert box or a prompt
-​▪​Log messages or errors to the console
-​▪​Access the browser’s local storage
-​▪​Access the document object
+​
+	▪​Displaying an alert box or a prompt
+	​▪​Log messages or errors to the console
+	​▪​Access the browser’s local storage
+	​▪​Access the document object
+
 You can access the window object from the Console by typing
 window and press Enter. The browser would respond by showing
 you the methods and properties of the object as follows:
+
 Figure 10. Window Object Properties and Methods
+
 The window object provides both child objects and methods that
 you’re going to access to manipulate a web page.
+
 For example, the window has the console object that you can use to
 log a message to the console.
+
 Type the code below to the console and hit Enter:
+
+```
 window.console.log('Hello World!');
+```
+
 You’ll see the string 'Hello World!' logged to the console.
+
 The window object is a global object, so you can omit it when calling
 its child object. To access the console object, just type console as
 follows:
+
+```
 console.log('Hello World!');
+```
+
 The same goes for when you access the document object. You can
-write
-document.propertyOrMethod
-instead
-of
-window.document.propertyOrMethod.
+write document.propertyOrMethod instead of window.document.propertyOrMethod.
 I won’t go too deep on the window object, because as a web
 developer, you’re going to interact more with the document object in
 your daily routine.
+
 The Document Object
+
 The document object is the entry point for all HTML elements that
 you write in your document. This object is also what gives the
+
 Document Object Model its name.
+
 It’s not called the Window Object Model because we’re mostly
 going to work with the Document object instead of the Window
 object.
+
 Figure 11. Document Object Model
+
 From the document object you can retrieve any data related to the
 HTML content using JavaScript. You can get the Document title
 using the document.title property, and the URL using document.URL.
 The referrer is available in document.referrer, the domain in
 document.domain.
+
 From the document object you can get the body and head nodes:
 document.documentElement:
-the
-whole
-HTML
-Element
-node
-document.body: the body Element node document.head: the head
+the whole HTML Element node document.body: the body Element node document.head: the head
+
 Element node
 You can try to access these from the console as shown below:
+
 Figure 12. Document Properties
 You can see the documentation of all the properties and methods of
 the document object at https://developer.mozilla.org/en-US/docs/
@@ -2306,6 +2438,7 @@ Web/API/Document (note that it might be overwhelming at first)
 Of course, you can do much more than just read your Document
 data. In the next chapter, we’re going to start a project to practice
 manipulating the DOM.
+
 Summary
 The DOM is a tree-like structure generated from the HTML file that
 we created and loaded into the browser.
@@ -2313,10 +2446,6 @@ The browser then exposes this DOM as a set of JavaScript objects
 that we can access, such as the window and document objects.
 It’s an important piece of technology that allows you to program
 the web browser to do specific tasks.
-
-
-
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>DOM Query Selector Methods</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
