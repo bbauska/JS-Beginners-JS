@@ -33,9 +33,9 @@ like PHP, Java, Python, Ruby, and many more. It also enabled developers to creat
 full-stack web application using only JavaScript.</p>
 
 <p>Today, JavaScript is a language that is used virtually everywhere.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Why Learn JavaScript?</h3>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>There are 4 good reasons why you need to learn JavaScript:</p>
 
 <ol type="1">
@@ -48,9 +48,9 @@ full-stack web application using only JavaScript.</p>
 <p>Learning JavaScript opens tremendous opportunities no matter what role you want to get into in 
 the tech industry. You can be a frontend, backend, mobile, or full-stack developer by mastering
 JavaScript.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Computer Setup</h3>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>To start programming with JavaScript, you only need two things:</p>
 <ol type="1">
   <li>A web browser, and</li>
@@ -67,9 +67,9 @@ install the browser on your computer.</p>
 the Internet, such as Sublime Text, Visual Studio Code, and Notepad++.</p>
 
 <p>Out of these editors, my favorite is Visual Studio Code, because it’s fast and easy to use.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Installing Visual Studio Code</h3>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Visual Studio Code or VSCode for short is a code editor application created for the purpose 
 of writing code. Aside from being free, VSCode is fast and available on all major operating 
 systems.</p>
@@ -79,7 +79,7 @@ systems.</p>
 <p>When you open the link above, there should be a button showing the version compatible with 
 your operating system as shown below:</p>
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image001.jpg"
   style="width:350px;"
@@ -145,9 +145,9 @@ colors. This is a feature of the text editor called syntax highlighting, and it�
 useful to help you distinguish different parts of the code.</p>
 
 <p>Save the changes to the file, and the next step is to run this file using a local server.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Install Live Server Extension</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>VSCode extensions are small programs created to enhance the
 capability of VSCode. One extension that’s very useful is the Live
 Server extension, which allows developers to run a local server to
@@ -160,9 +160,9 @@ puzzle of blocks or press Ctrl+Shift+X or Command+Shift+X.</p>
 <p>You should see the extension sidebar. At the top of the sidebar, type
 in 'live server' and select the one that’s created by Ritwick Dey. See
 the picture below:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Figure 2. Install Live Server</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Explanation of the image above:</p>
 <ol type="1">
   <li>Click the Extensions icon in the Activity Bar</li>
@@ -176,14 +176,15 @@ Activity Bar.</p>
 the context menu.</p>
 
 <p>The Live Server should start a local server and open your browser automatically as follows:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Figure 3. Live Server Running</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <p>If you see the image above, congratulations! You now have a local server to help you develop 
 your JavaScript application.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Creating the JavaScript File</h3>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Now that we have a local server running, the last thing we need is to create a JavaScript file 
 and print something to the console to know that it’s working correctly.</p>
 
@@ -201,7 +202,7 @@ browser console by pressing the Command+Option+J or Control
 +Shift+J</p>
 
 <p>You should see the words printed in the console as follows:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Figure 4. Open Browser Console</p>
 
 <p>With this, you’ve completed your first JavaScript application. Well done!</p>
@@ -217,9 +218,9 @@ you must be wondering what is an object and a method.</p>
 <p>Don’t worry! We’re going to learn more about functions and objects later. For now, 
 just remember that the console.log() keyword is used to print things to the console. 
 This keyword will be used frequently in the coming chapters.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Writing Comments</h3>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In programming, comments are text we use to communicate the context of the code 
 written in the file.</p>
 
@@ -244,9 +245,9 @@ console.log("Hello World!");
 // console.log("I'm learning JavaScript");
 ```
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Summary</h3>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In this chapter, we’ve explored the origins of JavaScript, installed the required tools to code 
 in JavaScript, and run our first JavaScript application.</p>
 
@@ -428,27 +429,29 @@ the + operator shown above.
 
 First, let’s start with strings.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Strings in JavaScript
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Strings in JavaScript</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Strings are simply data defined as a series of characters.
 You’ve seen an example of string data previously when you call the
 console.log() function to print a message:
+<pre>
 let message = "Hello, Sunshine!";
 console.log(message); // Hello, Sunshine!
-A string needs to be enclosed in quotations. You can use double
-quotes or single quotes, but they have to match.
-You’ll get an error when you use different quotation marks like
-this:
+</pre>
+<p>A string needs to be enclosed in quotations. You can use double quotes or single quotes, 
+but they have to match. You’ll get an error when you use different quotation marks like 
+this:</p>
 
 ```
 // Invalid or unexpected token
 let message = "Hello';
 ```
 
-You can join two or more strings as one with the plus + symbol.
+<p>You can join two or more strings as one with the plus + symbol.
 Don’t forget to add a space before the next string or you’ll get a
-string without spaces!
+string without spaces!</p>
 
 ```
 let message = "Hello " + "and " + "Goodbye!";
@@ -456,8 +459,8 @@ console.log(message);
 // Output: Hello and Goodbye!
 ```
 
-When printing a variable’s value, you can also add strings in the
-console.log() function directly as follows:
+<p>When printing a variable’s value, you can also add strings in the console.log() 
+function directly as follows:</p>
 
 ```
 let message = "Hello, Dave!";
@@ -465,8 +468,8 @@ console.log("The message is: " + message);
 // Output: The message is: Hello, Dave!
 ```
 
-This is particularly useful when you have multiple strings to
-console.log in one sentence as follows:
+<p>This is particularly useful when you have multiple strings to console.log in one 
+sentence as follows:</p>
 
 ```
 let name = "John";
@@ -475,8 +478,8 @@ console.log(name + " is learning " + topic + " today");
 // Output: John is learning JavaScript today
 ```
 
-Or you can also use the template strings format, which allows you
-to embed a variable directly inside the string as follows:
+<p>Or you can also use the template strings format, which allows you to embed a variable 
+directly inside the string as follows:</p>
 
 ```
 let name = "John";
@@ -485,18 +488,18 @@ console.log(`${name} is learning ${topic} today`);
 // Output: John is learning JavaScript today
 ```
 
-To use the template strings format, you need to use the backtick (&grave;) character to wrap 
-the string instead of quotations.
+<p>To use the template strings format, you need to use the backtick (&grave;) character to wrap 
+the string instead of quotations.</p>
 
-The variable is embedded in the string using the dollar symbol and curly brackets as in 
-<b>${variable}</b>.
+<p>The variable is embedded in the string using the dollar symbol and curly brackets as in 
+<b>${variable}</b>.</p>
 
-This way, JavaScript knows that you’re referencing a variable inside the string.
+<p>This way, JavaScript knows that you’re referencing a variable inside the string.</p>
 
-When you have multiple strings to print in a single line, then the template strings format is more 
-convenient because you don’t have to break the string with quotations and concatenations.
+<p>When you have multiple strings to print in a single line, then the template strings format is more 
+convenient because you don’t have to break the string with quotations and concatenations.</p>
 
-Next, strings can also represent numbers. You surround the numbers in quotations as follows:
+<p>Next, strings can also represent numbers. You surround the numbers in quotations as follows:</p>
 
 ```
 let score = "10" + "30";
@@ -504,9 +507,8 @@ console.log(score);
 // Output: 1030
 ```
 
-When you join two string numbers with a + symbol, JavaScript will join the two numbers instead of 
-performing arithmetic addition. This is how strings work in JavaScript. Let’s look at numbers next.
-
+<p>When you join two string numbers with a + symbol, JavaScript will join the two numbers instead of 
+performing arithmetic addition. This is how strings work in JavaScript. Let’s look at numbers next.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Numbers (Integers and Floats) in JavaScript</h3>
 
@@ -515,8 +517,8 @@ are two types of numbers in JavaScript:
 	​▪​Integers
 	​▪​Floats
 	
-An integer is a whole number without decimals and fractions.
-Below, you see examples of two integers x and y:
+<p>An integer is a whole number without decimals and fractions.
+Below, you see examples of two integers x and y:</p>
 
 ```
 let x = 1;
@@ -525,7 +527,7 @@ console.log(x + y);
 // Output: 3
 ```
 
-On the other hand, floats refer to numbers with decimal points like this:
+<p>On the other hand, floats refer to numbers with decimal points like this:</p>
 
 ```
 let f = 1.2;
@@ -534,13 +536,12 @@ console.log(f + z);
 // Output: 3.55
 ```
 
-To create a float, you need to write a number and use . to define
-the decimal values.
+<p>To create a float, you need to write a number and use . to define
+the decimal values.</p>
 
-With number types, you can perform arithmetic operations such as
+<p>With number types, you can perform arithmetic operations such as
 addition +, subtraction -, division /, and multiplication * just like
-how you use a calculator.
-
+how you use a calculator.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Booleans in JavaScript
 
@@ -970,6 +971,8 @@ operators in this category will return Boolean values: either true or
 false.
 The following table shows all comparison operators available in
 JavaScript:
+
+
 Name
 Operation
 Example
@@ -1147,6 +1150,8 @@ JavaScript also has the else if statement which allows you to write
 another condition to check should the previous if statement
 condition isn’t met.
 Consider the example below:
+
+```
 let balance = 7000;
 if (balance > 5000) {
 console.log("You have the money for this trip. Let's go!");
@@ -1155,6 +1160,8 @@ console.log("You only have enough money for a staycation");
 } else {
 } console.log("Sorry, not enough money. Save more!");
 console.log("The end!");
+```
+
 When the balance amount is less than 5000, the else if statement
 will check if the balance is more than 3000. If it does, then the
 program will proceed to recommend you do a staycation.
@@ -1163,6 +1170,7 @@ one will be executed only if the previous statement isn’t met.
 Together, the if..else..else if statements allow you to execute
 different blocks of code depending on the condition the program
 faces.
+
 The switch…​case Statement
 The switch statement is a part of core JavaScript syntax that allows
 you to control the execution flow of your code.
@@ -1171,6 +1179,8 @@ gives you more readable code, especially when you have many
 different conditions to assess.
 Here’s an example of a working switch statement. I will explain the
 code below:
+
+```
 let age = 15;
 switch (age) {
 case 10:
@@ -1182,6 +1192,8 @@ break;
 default:
 console.log("Age is neither 10 or 20");
 }
+```
+
 First, you need to pass an expression to be evaluated by the switch
 statement into the parentheses. In the example, the age variable is
 passed as an argument for evaluation.
@@ -1189,21 +1201,28 @@ Then, you need to write the case values that the switch statement
 will try to match with your expression. The case value is
 immediately followed by a colon (:) to mark the start of the case
 block:
+
 case "apple":
 Keep in mind the data type of the case value that you want to
 match with the expression. If you want to match a string, then you
 need to put a string. switch statements won’t perform type
 coercion when you have a number as the argument but put a string
+
+```
 for the case:
 switch (1) {
 case "1":
 console.log("Hello World!");
 break;
 }
+```
+
 The number expression doesn’t match the string case value, so
 JavaScript won’t log anything to the console.
 The same also happens for boolean values. The number 1 won’t be
 coerced as true and the number 0 won’t be coerced as false:
+
+```
 switch (0) {
 case true:
 console.log("Hello True!");
@@ -1214,6 +1233,8 @@ break;
 default:
 console.log("No matching case");
 }
+```
+
 The switch Statement Body
 The switch statement body is composed of three keywords:
 ​▪​case keyword for starting a case block
@@ -1226,6 +1247,8 @@ execute the code following the case statement until it finds the
 break keyword. If you omit the break keyword, then the code
 execution will continue to the next block.
 Take a look at the following example:
+
+```
 switch (0) {
 case 1:
 console.log("Value is one");
@@ -1234,10 +1257,13 @@ console.log("Value is zero");
 default:
 console.log("No matching case");
 }
+```
+
 When you execute the code above, JavaScript will print the
 following log:
-> "Value is zero"
-> "No matching case"
+"Value is zero"
+"No matching case"
+
 This is because without the break keyword, switch will continue to
 evaluate the expression against the remaining cases even when a
 matching case is already found.
@@ -1245,42 +1271,50 @@ Your switch evaluation may match more than one case, so the break
 keyword is commonly used to exit the process once a match is
 found.
 Finally, you can also put expressions as case values:
+
+```
 switch (20) {
 case 10 + 10:
 console.log("value is twenty");
 break;
 }
+```
+
 But you need to keep in mind that the value for a case block must
 exactly match the switch argument.
 One of the most common mistakes when using the switch
 statement is that people think case value gets evaluated as true or
 false.
 The following case blocks won’t produce the righ results:
+
+```
 let age = 5;
 switch (age) {
-case age < 10:
-console.log("Value is less than ten");
-break;
-case age < 20:
-console.log("Value is less than twenty");
-break;
-default:
-console.log("Value is twenty or more");
+  case age < 10:
+  console.log("Value is less than ten");
+  break;
+  case age < 20:
+  console.log("Value is less than twenty");
+  break;
+  default:
+  console.log("Value is twenty or more");
 }
+```
+
 You need to remember the differences between the if and case
 evaluations:
-​▪​if block will be executed when the test condition evaluates to
-true
-​▪​case block will be executed when the test condition exactly
-matches the given switch argument
-When to Use Switch?
-The rule of thumb when you consider between if and switch is
-this:
-​​You only use switch when the code is cumbersome to
-write using if
-For example, let’s say you want to write a weekday name based on
-the weekday number
-Here’s how you can write it:
+<ul>
+​  <li>​if block will be executed when the test condition evaluates to true.</li>
+  <li>​case block will be executed when the test condition exactly matches the given 
+    switch argument.</li>
+</ul>
+
+<h4>When to Use Switch?</h4>
+<p>The rule of thumb when you consider between if and switch is this:</p>
+​
+<p>You only use switch when the code is cumbersome to
+write using if for example, let’s say you want to write a weekday name based on
+the weekday number. Here’s how you can write it:</p>
 
 ```
 let weekdayNumber = 1;
@@ -1335,12 +1369,12 @@ default:
 } console.log("The weekday number is invalid");
 ```
 
-Loop Flow
-As you program an application in JavaScript, you’ll often need to
+<h4>Loop Flow</h4>
+<p>As you program an application in JavaScript, you’ll often need to
 write a piece of code that needs to be executed repeatedly.
 Let’s say you want to write a program that prints the numbers 1 to
 10 in the console. You can do it by calling console.log 10 times like
-this:
+this:</p>
 
 ```
 console.log(1);
@@ -1348,9 +1382,9 @@ console.log(2);
 console.log(3);
 console.log(4);
 console.log(5);
+// and so on..
 ```
 
-// and so on..
 This works, but there’s a better way to write this kind of repetitive
 task.
 A loop statement is another type of control flow statement used to
@@ -1364,8 +1398,12 @@ The for Statement
 Instead of repeating yourself 10 times to print the numbers 1 to 10,
 you can use the for statement and write just a single line of code as
 follows:
+
+```
 for (let x = 0; x < 10; x++) {
 } console.log(x);
+```
+
 There you go! The for statement is followed by parentheses (())
 which contain 3 expressions:
 ​▪​The initialization expression, where you declare a variable to
@@ -1421,12 +1459,13 @@ console.log("The for loop has ended");
 console.log("Continue code execution");
 ```
 
-When to Use a for Loop
+<h4>When to Use a for Loop</h4>
 The for loop is useful when you know how many times you need
 to execute a repetitive task.
 For example, let’s say you’re writing a program to flip a coin. You
 need to find how many times the coin lands on heads when tossed
 10 times. You can do it by using the Math.random method:
+
 ​▪​When the number is lower than 0.5 you need to increment the
 tails counter
 ​▪​When the number is 0.5 and up you must increment the heads
@@ -1480,13 +1519,13 @@ i++;
 }
 ```
 
-Here, the while loop will repeatedly print the value of i as long as i
+<p>Here, the while loop will repeatedly print the value of i as long as i
 is less than 6. In each iteration, the value of i is incremented by 1
-until it reaches 6 and the loop terminates.
-Keep in mind that you need to include a piece of code that
+until it reaches 6 and the loop terminates.</p>
+<p>Keep in mind that you need to include a piece of code that
 eventually turns the evaluating condition to false or the while loop
 will be executed forever. The example below will cause an infinite
-loop:
+loop:</p>
 
 ```
 let i = 0;
@@ -1495,19 +1534,19 @@ console.log(`The value of i = ${i}`);
 }
 ```
 
-Because the value of i never changes, the while loop will go on
-forever!
-When to Use a While Loop
+<p>Because the value of i never changes, the while loop will go on
+forever!</p>
+<p>When to Use a While Loop
 Seeing that both while and for can be used for executing a piece of
-code repeatedly, when should you use a while loop instead of for?
-An easy way to know when you should use while is when you don’t
-know how many times you need to execute the code.
-Back to the coin toss example, there’s one case that’s perfect for a
-while loop:
-Find out how many times you need to flip a coin until it lands
-on heads.
-You also need to show how many times you flip the coin until it
-lands on heads:
+code repeatedly, when should you use a while loop instead of for?</p>
+<p>An easy way to know when you should use while is when you don’t
+know how many times you need to execute the code.</p>
+<p>Back to the coin toss example, there’s one case that’s perfect for a
+while loop:</p>
+<p>Find out how many times you need to flip a coin until it lands
+on heads.</p>
+<p>You also need to show how many times you flip the coin until it
+lands on heads:</p>
 
 ```
 let flips = 0;
@@ -1519,39 +1558,45 @@ isHeads = Math.random() < 0.5;
 console.log(`It took ${flips} flips to land on heads.`);
 ```
 
-Here, the condition isHead = Math.random() < 0.5 simulates the
+<p>Here, the condition isHead = Math.random() < 0.5 simulates the
 flipping of a fair coin. When the result is true, it means the coin
 landed on heads and the loop will exit.
 Because you can’t know how many times you need to loop until
 you get the number 8, you need to use a while loop instead of a for
-loop.
-Summary
-In this chapter, you’ve learned about the two types of control flow
+loop.</p>
+
+<h4>Summary</h4>
+<p>In this chapter, you’ve learned about the two types of control flow
 available in JavaScript: the conditional flow and the loop flow.
 Each type has two different ways of controlling the flow:
 conditional has if-else and switch, while loop has for and while
-statements.
-The if and for statements are usually preferred over the switch
+statements.</p>
+<p>The if and for statements are usually preferred over the switch
 and while statements. You can think of switch and while as an
-alternative syntax that you use when if and for isn’t suitable.
-Chapter 6: Functions
-A function is simply a section (or a block) of code that’s written to
-perform a specific task.
-For example, the type casting function String() is used to convert
-data of another type to a string.
-The log() method from console.log() that we’ve used in the
+alternative syntax that you use when if and for isn’t suitable.</p>
+
+<h2>Chapter 6: Functions</h2>
+<p>A function is simply a section (or a block) of code that’s written to
+perform a specific task.</p>
+<p>For example, the type casting function String() is used to convert
+data of another type to a string.</p>
+
+<p>The log() method from console.log() that we’ve used in the
 previous chapters is also a function, but because log() is attached
-to the console object, it’s called a method.
-You’ll learn more about objects and methods in the chapter. For
+to the console object, it’s called a method.</p>
+
+<p>You’ll learn more about objects and methods in the chapter. For
 now, just know that a function and a method are essentially the
-same, except that a method is called from an object.
-Besides the built-in functions provided by JavaScript, you can also
-create your own function.
+same, except that a method is called from an object.</p>
+
+<p>Besides the built-in functions provided by JavaScript, you can also
+create your own function.</p>
+
 How to Create Your Own Function
-Creating a function starts with typing the function keyword
+<p>Creating a function starts with typing the function keyword
 followed by the function name, a pair of round brackets, and then a
-pair of curly brackets.
-Here’s an example:
+pair of curly brackets.</p>
+<p>Here’s an example:</p>
 
 ```
 function greet() {
@@ -1567,15 +1612,16 @@ by parentheses:
 greet(); // Hello!
 ```
 
-The code inside the function is executed when you call that
-function.
+<p>The code inside the function is executed when you call that
+function.</p>
+
 Function Parameters and Arguments
-Parameters are variables used to accept inputs given when the
-function is called.
-You can specify parameters in the function header, inside the
-parentheses.
-The following example shows a function that has one parameter
-called name:
+<p>Parameters are variables used to accept inputs given when the
+function is called.</p>
+<p>You can specify parameters in the function header, inside the
+parentheses.</p>
+<p>The following example shows a function that has one parameter
+called name:</p>
 
 ```
 function greet(name) {
@@ -1630,25 +1676,26 @@ Hello, Nathan!
 It's rainy today, right?
 ```
 
-When you specify two parameters in the function header, you need
+<p>When you specify two parameters in the function header, you need
 to pass two arguments. If you call the function without passing the
-arguments then the value will be undefined.
-In the next section, you’ll learn how to create parameters with
+arguments then the value will be undefined.</p>
+<p>In the next section, you’ll learn how to create parameters with
 default values, which allows you to call the function without
-having to pass an argument to it.
-But for now, I hope you see the convenience of having parameters.
-They make your functions more adaptable and reusable by taking
+having to pass an argument to it.</p>
+<p>But for now, I hope you see the convenience of having parameters.</p>
+<p>They make your functions more adaptable and reusable by taking
 different input values to cover a variety of scenarios the function
-might have.
-As shown in the example, the name and weather parameters allow
-you to greet many different people in different weathers.
-Whether sunny, rainy, or cloudy, just change the name and weather
-arguments when you want to greet another person.
+might have.</p>
+<p>As shown in the example, the name and weather parameters allow
+you to greet many different people in different weathers.</p>
+<p>Whether sunny, rainy, or cloudy, just change the name and weather
+arguments when you want to greet another person.</p>
+
 Default Parameters
-When defining a function, you can set a default value for any
-parameter in that function.
-For example, the name parameter in the function below is a default
-parameter:
+<p>When defining a function, you can set a default value for any
+parameter in that function.</p>
+<p>For example, the name parameter in the function below is a default
+parameter:</p>
 
 ```
 function greet(name = "Nathan") {
@@ -1657,10 +1704,10 @@ console.log("Nice weather today, right?");
 }
 ```
 
-Here, the default value 'Nathan' will be used when no value or
-undefined is passed for the name parameter.
-You can test this by calling the greet() function without an
-argument as follows:
+<p>Here, the default value 'Nathan' will be used when no value or
+undefined is passed for the name parameter.</p>
+<p>You can test this by calling the greet() function without an
+argument as follows:</p>
 
 ```
 greet();
@@ -1672,12 +1719,11 @@ Hello, Jack!
 Nice weather today, right?
 ```
 
-Any function you define can have a mix of default and non-default
-parameters.
+<p>Any function you define can have a mix of default and non-default parameters.</p>
 
-Here’s another example of a function that has one default
+<p>Here’s another example of a function that has one default
 parameter called name and one non-default parameter called
-weather:
+weather:</p>
 
 ```
 function greet(weather, name = "Nathan") {
@@ -1690,13 +1736,13 @@ Hello, Nathan!
 It's sunny today, right?
 ```
 
-Notice that the weather parameter was placed in front of the name
+<p>Notice that the weather parameter was placed in front of the name
 parameter. This is for convenience so that you don’t need to specify
-the default parameter.
-If you place the non-default parameter after the default parameter,
+the default parameter.</p>
+<p>If you place the non-default parameter after the default parameter,
 then you need to pass a value to the name parameter to get to the
-weather parameter.
-Consider the example below:
+weather parameter.</p>
+<p>Consider the example below:</p>
 
 ```
 function greet(name = "Nathan", weather) {
@@ -1706,16 +1752,17 @@ console.log(`It's ${weather} today, right?`);
 greet(undefined, "sunny");
 ```
 
-To pass an argument to the weather parameter, we need to pass
-undefined or any value for the name parameter first.
-This is why it’s better to specify non-default parameters in front of
-default parameters.
+<p>To pass an argument to the weather parameter, we need to pass
+undefined or any value for the name parameter first.</p>
+<p>This is why it’s better to specify non-default parameters in front of
+default parameters.</p>
+
 Default Parameters and Null
-Back in Section 2, recall that we briefly explored the difference
+<p>Back in Section 2, recall that we briefly explored the difference
 between undefined as the "default" empty value and null as the
-"intentional" empty value.
-When you pass undefined to a function that has a default
-parameter, the default parameter will be used:
+"intentional" empty value.</p>
+<p>When you pass undefined to a function that has a default
+parameter, the default parameter will be used:</p>
 
 ```
 function greet(name = "John"){
@@ -1724,10 +1771,10 @@ console.log(name);
 greet(undefined); // John
 ```
 
-As you can see, JavaScript prints the default parameter value John
-when you pass undefined to the function.
-But when you pass null to the function, the default parameter will
-be ignored:
+<p>As you can see, JavaScript prints the default parameter value John
+when you pass undefined to the function.</p>
+<p>But when you pass null to the function, the default parameter will
+be ignored:</p>
 
 ```
 function greet(name = "John"){
@@ -1736,22 +1783,28 @@ console.log(name);
 greet(null); // null
 ```
 
-This is one of the common mistakes that beginners make when
+<p>This is one of the common mistakes that beginners make when
 learning JavaScript. When you use the value null, JavaScript will
 think you want that value to be empty, so it doesn’t replace the
-value with the default parameter.
-When you use undefined, then JavaScript will replace it with the
+value with the default parameter.</p>
+
+<p>When you use undefined, then JavaScript will replace it with the
 default parameter. You might encounter this issue as you work
 with JavaScript code in your career, so just keep this in mind.
+
 The return Statement
-A function can also have a return statement inside the code block.
+<p>A function can also have a return statement inside the code block.
 A return statement is used to return a value back to the caller.
 For example, the following function returns the sum of two values:
+
+```
 function sum(a, b) {
 return a + b;
 }
 let result = sum(3, 2);
 console.log(result); // 5
+```
+
 The value returned by a function can be assigned to a variable for
 further operation. You can add the return statement anywhere
 inside the function.
@@ -1759,6 +1812,8 @@ When JavaScript reaches the return statement, it skips further code
 written inside the function block and goes back to where you call
 the function.
 The following function has two return statements:
+
+```
 function checkAge(age) {
  if (age > 18) {
 return "You may get a car license";
@@ -1767,6 +1822,8 @@ return "You may not get a car license yet";
 }
 console.log(checkAge(20));
 console.log(checkAge(15));
+```
+
 Output:
 You may get a car license
 You may not get a car license yet
@@ -1778,18 +1835,23 @@ met, so JavaScript executed the return statement under the if block
 instead.
 You can also stop a function execution and return to the caller by
 specifying the return statement without any value:
+
+```
 function greet() {
 console.log("Hello!");
 return;
 console.log("Good bye!");
 }
 greet()
+```
+
 Output:
 Hello!
 Here, the return statement is called between the console.log()
 calls.
 JavaScript executes the first console.log() call, then skips the rest
 of the code. The 'Good bye!' string isn’t printed.
+
 Variable Scope
 Now that you’re learning about functions, it’s a good time to talk
 about variable scope.
@@ -1799,11 +1861,15 @@ On the other hand, a variable declared outside of any block is
 known as a global variable because of its global scope.
 These two scopes are important because when you try to access a
 local variable outside of its scope, you’ll get an error. For example:
+
+```
 function greet() {
 let myString = "Hello World!";
 }
 greet();
 console.log(myString);
+```
+
 When you run the code above, JavaScript responds with an error:
 ReferenceError: myString is not defined
 This is because the myString variable is declared inside the greet()
@@ -1812,11 +1878,15 @@ matter even if you called that function before accessing the
 variable.
 Meanwhile, a global variable can be accessed from anywhere, even
 inside a function:
+
+```
 let myString = "Hello World!";
 function greet() {
 console.log(myString);
 }
 greet(); // Hello World!
+```
+
 Here, the greet() function is able to access the myString variable
 declared outside of it.
 Keep in mind that this applies only to variables declared using let
@@ -1824,6 +1894,8 @@ and const.
 Next, you can also define a local variable with the same name as
 the global variable without overwriting it.
 Here’s an example:
+
+```
 let myString = "Hello World!";
 function greet() {
 let myString = "Morning!";
@@ -1831,6 +1903,8 @@ console.log(myString);
 }
 greet(); // Morning!
 console.log(myString); // Hello World!
+```
+
 When you call the greet() function, a local variable called myString
 is assigned the string 'Morning!'.
 Outside of the function, the global variable that’s also called
@@ -1838,14 +1912,17 @@ myString still exists, and the value isn’t changed.
 JavaScript considers the local scope variable to be a different
 variable. When you declare the same variable inside a function,
 any code inside the function will always refer to the local variable.
+
 In practice, you rarely need to declare the same variable in
 different scopes:
-1. Any variable declared outside a function shouldn’t be
+
+  1. Any variable declared outside a function shouldn’t be
 used inside a function without passing them as
 parameters.
-2. A variable declared inside a function should never be
+  2. A variable declared inside a function should never be
 referred to outside of that function
 Keep this in mind when you write JavaScript functions.
+
 The Rest Parameter
 The rest parameter is a parameter that can accept any number of
 data as its arguments. The arguments will be stored as an array.
@@ -1853,11 +1930,17 @@ You can define a rest parameter in the function header by adding
 triple dots …​ before the parameter name.
 Here’s an example of creating a function that has a variable length
 argument:
+
+```
 function printArguments(...args){
 console.log(args);
 }
+```
+
 When calling the printArguments() function above, you can specify
 as many arguments as you want:
+
+```
 function printArguments(...args){
 console.log(args);
 }
@@ -1865,101 +1948,151 @@ printArguments("A", "B", "C");
 // [ 'A', 'B', 'C' ]
 printArguments(1, 2, 3, 4, 5);
 // [ 1, 2, 3, 4, 5 ]
+```
+
 Keep in mind that a function can only have one rest parameter,
 and the rest parameter must be the last parameter in the function.
 You can use a rest parameter when your function needs to work
 with an indefinite number of arguments.
+
 Arrow Function Syntax
 The arrow function syntax allows you to write a JavaScript
 function with a shorter, more concise syntax.
 When you need to create a function in JavaScript, the primary
 method is to use the function keyword followed by the function
 name as shown below:
+
+```
 function greetings(name) {
 } console.log(`Hello, ${name}!`);
 greetings("John"); // Hello, John!
+```
+
 The arrow function syntax allows you to create a function
 expression that produces the same result as the code above.
 Here’s the greetings() function using the arrow syntax:
+
+```
 const greetings = (name) => {
 console.log(`Hello, ${name}!`);
 };
 greetings("John"); // Hello, John!
+```
+
 When you create a function using the arrow function syntax, you
 need to assign the expression to a variable so that the function has
 a name.
 Basically, the arrow function syntax looks as follows:
+
+```
 const fun = (param1, param2, ...) => {
 // function body
 }
-In the code above,
-​▪​fun is the variable that holds the function. You can call the
-function as fun() later in your code.
-​▪​(param1, param2, …​) are the function parameters. You can
-define as many parameters as required by the function.
-​▪​Then you have the arrow ⇒ to indicate the beginning of the
-function.
-The code above is equal to the following:
+```
+
+<p>In the code above,</p>
+<ul>
+  <li>▪​fun is the variable that holds the function. You can call the
+function as fun() later in your code.</li>
+  <li>​(param1, param2, …​) are the function parameters. You can
+define as many parameters as required by the function.</li>
+  <li>▪​Then you have the arrow ⇒ to indicate the beginning of the function.</li>
+</ul>
+<p>The code above is equal to the following:</p>
+
+```
 const fun = function(param1, param2, ...) {
 // function body
 }
-The arrow function syntax doesn’t add any new ability to the
-JavaScript language.
-Instead, it offers improvements to the way you write a function in
-JavaScript.
-At first, it may seem weird as you are used to the function keyword.
+```
+
+<p>The arrow function syntax doesn’t add any new ability to the JavaScript language.</p>
+<p>Instead, it offers improvements to the way you write a function in JavaScript.</p>
+<p>At first, it may seem weird as you are used to the function keyword.
 But as you start using the arrow syntax, you will see that it’s very
-convenient and easier to write.
+convenient and easier to write.</p>
+
 Single and Multi-line Arrow Functions
-The arrow function provides you a way to write a single line
-function where the left side of the arrow ⇒ is returned to the right
-side.
-When you use the function keyword, you need to use the curly
-brackets {} and the return keyword as follows:
+<p>The arrow function provides you a way to write a single line function where the left 
+side of the arrow ⇒ is returned to the right side.</p>
+<p>When you use the function keyword, you need to use the curly brackets {} and the 
+return keyword as follows:</p>
+
+```
 function plusTwo(num) {
 return num + 2;
 }
-Using the arrow function, you can omit both the curly brackets and
+```
+
+<p>Using the arrow function, you can omit both the curly brackets and
 the return keyword, creating a single line function as shown below:
+
+```
 const plusTwo = (num) => num + 2;
+```
+
 Without the curly brackets, JavaScript will evaluate the expression
 on the right side of the arrow syntax and return it to the caller.
 The arrow function syntax also works for a function that doesn’t
 return a value as shown below:
+
+```
 const greetings = () => console.log("Hello World!");
+```
+
 When using the arrow function syntax, the curly brackets are
 required only when you have a multiline function body:
+
+```
 const greetings = () => {
 console.log("Hello World!");
 console.log("How are you?");
 };
+```
+
 Arrow function Without Round Brackets
 The round brackets () are used in JavaScript functions to indicate
 the parameters that the function can receive.
 When you use the function keyword, the round brackets are always
 required:
+
+```
 function plusThree(num) {
 return num + 3;
 }
+```
+
 On the other hand, the arrow function allows you to omit the
 round brackets when you have exactly one parameter for the
 function:
 The following code example is a valid arrow function expression:
+
+```
 const plusThree = num => num + 3;
+```
+
 As you can see, you can remove the round and curly brackets as
 well as the return keyword.
 But you still need the round brackets for two conditions:
-​▪​When the function has no parameter
-​▪​When the function has more than one parameter
+<ul>
+  <li>​When the function has no parameter</li>
+  <li>​When the function has more than one parameter</li>
+</ul>
 When you have no parameter, then you need round brackets
 before the arrow as shown below:
+
+```
 const greetings = () => console.log("Hello World!");
+```
+
 The same applies when you have more than one parameter.
 The function below has two parameters: name and age.
 const greetings = (name, age) => console.log("Hello World!");
 The arrow syntax makes the round brackets optional when you
 have a single parameter function.
+
 Convert a Normal Function to an Arrow
+
 Function Easily
 You can follow the three easy steps below to convert a normal
 function to an arrow function:
@@ -1969,6 +2102,8 @@ let or const
 round brackets
 3. Add ⇒ symbol after the round brackets
 The code below will help you to visualize the steps:
+
+```
 function plusTwo(num) {
 return num + 2;
 }
@@ -1984,26 +2119,37 @@ return num + 2;
 const plusTwo = (num) => {
 return num + 2;
 }
+```
+
 The three steps above are enough to convert any old JavaScript
 function syntax to the new arrow function syntax.
 When you have a single line function, there’s a fourth optional step
 to remove the curly brackets and the return keyword as follows:
+
+```
 // from this
 const plusTwo = num => {
 return num + 2;
 };
 // to this
 const plusTwo = num => num + 2;
+```
+
 When you have exactly one parameter, you can also remove the
 round brackets:
+
+```
 // from this
 const plusTwo = (num) => num + 2;
 // to this
 const plusTwo = num => num + 2;
+```
+
 But the last two steps are optional. Only the first three steps are
 required to convert any JavaScript function and use the arrow
 function syntax.
-Summary
+
+<h4>Summary</h4>
 In this chapter, you’ve learned how to declare and execute
 functions in JavaScript.
 You’ve also learned about the two syntaxes that you can use to
@@ -2027,8 +2173,12 @@ Let’s see an example illustrating the benefit of using objects.
 Suppose you want to store information about a book in your
 program.
 When you use regular variables, it would look like this:
+
+```
 let bookTitle = "Beginning JavaScript";
 let bookAuthor = "Nathan Sebhastian";
+```
+
 While it works okay, it certainly isn’t the best way to store related
 values. JavaScript doesn’t know that the two variables are related.
 Only you, as the human, knows there’s a relation between the two
@@ -2051,7 +2201,11 @@ pair as a variable declared in an object.
 When you need to add more than one item to an object, you need
 to separate each item using a comma. To access a property, you can
 use a dot (.) notation like this:
+
+```
 console.log(myBook.title); // Beginning JavaScript
+```
+
 You can assign a string or numbers as the key of an item, and you
 can assign any type of data as the value, including a number and a
 function:
@@ -2089,7 +2243,11 @@ It’s because the term method instantly implies that there’s an object
 that this method belongs to.
 When you call a function such as String(), you call the function
 without specifying the object that has that function:
+
+```
 String(7)
+```
+
 But when you’re calling a method, you need to specify the object
 from which you call the function.
 For example, when calling the describe() method from the myBook
@@ -2107,7 +2265,7 @@ The same also applies for properties. The term is used to
 differentiate between "variables" and "variables in an object".
 How to access object values
 To access the value of an object, you can use either the dot notation
-. or the square brackets [] notation.
+ or the square brackets [] notation.
 Here’s an example of using the dot notation to access the object
 properties:
 
@@ -2120,8 +2278,7 @@ console.log(myBook.title);
 console.log(myBook.author);
 ```
 
-And here’s how you use the square brackets to access the same
-properties:
+And here’s how you use the square brackets to access the same properties:
 
 ```
 let myBook = {
@@ -3097,32 +3254,43 @@ step-by-step and gradually becomes more complex.</p>
 from a backend service.</p>
 
 <h2>Chapter 13: Asynchronous JavaScript and Callbacks</h2>
-JavaScript is a non-blocking, synchronous programming language.
+<p>JavaScript is a non-blocking, synchronous programming language.
 What does this even mean? It means that JavaScript doesn’t wait
 until a code finished running before running the next one (non-
-blocking)
-Synchronous means sequential, and we know this because
+blocking)</p>
+
+<p>Synchronous means sequential, and we know this because
 JavaScript runs code line by line from the top to the bottom.
 Why is this important? Let me show you an easy example.
 The window object of the DOM has a method called setTimeout() that
-you can use to run a function after a specific amount of time.
-The method accepts two arguments:
+you can use to run a function after a specific amount of time.</p>
+
+<p>The method accepts two arguments:</p>
 1. The function to execute after the timeout
 2. The amount of time to wait in milliseconds
-For example, here’s how to wait 3 seconds before running a
-console log:
+
+<p>For example, here’s how to wait 3 seconds before running a
+console log:</p>
+
+```
 setTimeout(function () {
 console.log('Hello!');
 }, 3000);
-Run the code above from the console, and after 3 seconds, you
+```
+
+<p>Run the code above from the console, and after 3 seconds, you
 should see the 'Hello!' string printed.
 Now, let’s add some console log before and after the setTimeout()
-method as follows:
+method as follows:</p>
+
+```
 console.log('Start');
 setTimeout(function () {
 console.log('Hello!');
 }, 3000);
 console.log('End');
+```
+
 Now we have 'Start' and 'End' strings which should be printed
 before and after the setTimeout() method has finished executing.
 When you run the code above, you will see this output:
@@ -3141,21 +3309,29 @@ server, and you need to wait for the response before continuing
 code execution.
 To make JavaScript wait until a specific operation has been
 completed, we need to use what’s known as the callback function.
+
 Callback Functions Explained
+
 A callback function is simply a function passed into another
 function as an argument. The callback function would then be used
 by the function when the situation is right.
+
 The function we passed into the setTimeout() method above is a
 callback function. So does the function we passed into the
 addEventListener() method.
+
 Back to the example above, we can make JavaScript wait for the
 setTimeout() method to finish before printing the 'End' string by
 moving the console log line below 'Hello!' as follows:
+
+```
 console.log('Start');
 setTimeout(function () {
 console.log('Hello!');
 console.log('End!');
 }, 3000);
+```
+
 But of course, we can do this because we’re the ones who added the
 setTimeout() method.
 If we imagine the setTimeout() method as a part of code that we
@@ -3164,6 +3340,8 @@ sure that it runs a certain instruction after the timeout?
 The answer is to use a callback, just like the addEventListener()
 method. In the example below, imagine that you can’t modify the
 content of the processData() function:
+
+```
 function processData(data, callbackFn) {
 setTimeout(function () {
 console.log('Sending data back');
@@ -3173,60 +3351,75 @@ data: data + 'abc',
 callbackFn(response);
 }, 3000);
 }
-Here, the processData() function accepts two parameters:
+```
+
+<p>Here, the processData() function accepts two parameters:</p>
 1. The data parameter to process
 2. The callback function to execute after the process
+
 To get the response from the function above, we need to call that
 function and pass both data and a callback function.
 Here’s how you do it:
+
+```
 processData('Nathan', function (response) {
 console.log(`Response given: ${response}`);
 });
-This callback pattern is used not only when responding to events,
-but also when sending data to another server.
-We don’t know in advance how long a server needs to process the
+```
+
+<p>This callback pattern is used not only when responding to events,
+but also when sending data to another server.</p>
+<p>We don’t know in advance how long a server needs to process the
 data, so we put a callback function that will be executed when the
-response is ready.
-Summary
-In this chapter, you’ve learned that JavaScript is a programming
+response is ready.</p>
+
+<h2>Summary</h2>
+<p>In this chapter, you’ve learned that JavaScript is a programming
 language that doesn’t stop to wait for a function that takes time to
 finish. It will continue to run the next line of code when the
-previous line isn’t completed yet.
-The callback function is a way to make JavaScript run in an
+previous line isn’t completed yet.</p>
+<p>The callback function is a way to make JavaScript run in an
 asynchronous manner. The next step of the operation starts only
-when the previous operation is completed.
+when the previous operation is completed.</p>
 
-Chapter 14: Promises
-A Promise is an alternative way to deal with the non-blocking
+<h2>Chapter 14: Promises</h2>
+<p>A Promise is an alternative way to deal with the non-blocking
 nature of JavaScript while running asynchronous operations. It’s a
 modern feature released in 2015 (that is 20 years after the first
-release of JavaScript)
-Basically, a Promise object represents a "pending state" in the most
+release of JavaScript)</p>
+<p>Basically, a Promise object represents a "pending state" in the most
 common sense: The promise will eventually be fulfilled at a later
-date.
-To give you an illustration, suppose you want to buy a new phone
+date.</p>
+<p>To give you an illustration, suppose you want to buy a new phone
 to replace your old phone, so you open a messaging app to contact
 a phone store. This is similar to how you access a variable or a
-function that returns a promise:
-After you send a message explaining what you want, you get an
+function that returns a promise:</p>
+
+<p>After you send a message explaining what you want, you get an
 automated message saying that a representative will answer your
 message shortly. This is similar to receiving a Promise object:
 A minute later, you get a new message from a human
 representative, saying that the phone model you want to buy is
-available for purchase. This is when the Promise was resolved:
-Or, in a completely different scenario, the representative tells you
+available for purchase. This is when the Promise was resolved:</p>
+
+<p>Or, in a completely different scenario, the representative tells you
 that the store doesn’t sell phones, because the store is a food store
-and not a phone store. This means the Promise was rejected:
-This illustration shows how the Promise object in JavaScript works:
-​▪​A Promise is like the automated message that we’ve seen earlier,
-it represents a pending state that must be fulfilled by later.
-​▪​The human representative saying that the phone model is
+and not a phone store. This means the Promise was rejected:</p>
+<p>This illustration shows how the Promise object in JavaScript works:</p>
+
+<ul>
+​  <li>​A Promise is like the automated message that we’ve seen earlier,</p>
+it represents a pending state that must be fulfilled by later.</li>
+​  <li>​The human representative saying that the phone model is
 available is similar to the resolve() method, which shows that
-the Promise is fulfilled.
-​▪​The representative telling you that you’re contacting the wrong
+the Promise is fulfilled.</li>
+​  <li>​The representative telling you that you’re contacting the wrong
 store is like the reject() method, which is the method used to
-show that the Promise can’t be fulfilled because of an error.
-A typical promise implementation would look as follows:
+show that the Promise can’t be fulfilled because of an error.</li>
+</ul>
+<p>A typical promise implementation would look as follows:</p>
+
+```
 let p = new Promise((resolve, reject) => {
 let isTrue = true;
 if (isTrue) {
@@ -3235,13 +3428,17 @@ resolve('Promise resolved');
 reject('Promise rejected');
 }
 });
-When creating a new Promise object, we need to pass a callback
+```
+
+<p>When creating a new Promise object, we need to pass a callback
 function that will be called immediately with two arguments: the
-resolve() and reject() functions
-Depending on the result of the Promise, either the resolve() or the
-reject() function will be called to end the pending state.
-To handle the Promise object, you need to chain the function call
-with then() and catch() functions as shown below:
+resolve() and reject() functions</p>
+<p>Depending on the result of the Promise, either the resolve() or the
+reject() function will be called to end the pending state.</p>
+<p>To handle the Promise object, you need to chain the function call
+with then() and catch() functions as shown below:</p>
+
+```
 let p = new Promise((resolve, reject) => {
 let isTrue = true;
 if (isTrue) {
@@ -3250,15 +3447,17 @@ resolve('Success');
 reject('Error');
 }
 });
-p
-.then(message => console.log(`Promise resolved: ${message}`))
+p.then(message => console.log(`Promise resolved: ${message}`))
 .catch(message => console.log(`Promise rejected: ${message}`));
+```
+
 The resolve() function corresponds to the then() function, while
 reject() corresponds to the catch() function. You can change the
 isTrue value to false to test this.
 Here’s an illustration of the promise process:
 Using the promise pattern, you can call your functions sequentially
 by placing the next process inside the then() method.
+
 Callbacks vs Promises
 The promise pattern is created to replace the use of callbacks. By
 using promises, the code we write would be more intuitive and
@@ -3267,11 +3466,17 @@ Going back to the messaging illustration, let’s create an example of
 using callbacks to handle the situation. First, we declare the two
 variables required for this situation, called isPhoneStore and
 isPhoneAvailable:
+
+```
 const isPhoneStore = true;
 const isPhoneAvailable = true;
+```
+
 Next, we write a function that will process incoming messages. This
 function will mimic the promise pattern, and it will resolve only
 when isPhoneStore and isPhoneAvailable are true:
+
+```
 function processMessage(resolveCallback, rejectCallback) {
 if (!isPhoneStore) {
 rejectCallback({
@@ -3290,15 +3495,21 @@ message: 'The X phone is available! How many you want to buy?',
 });
 }
 }
+```
+
 Here, you can see that the function processMessage accepts two
 callback functions: resolveCallback and rejectCallback.
 When we call the function, we need to provide the callback
 functions, similar to how we need to chain the then() and catch()
 methods when accessing a promise:
+
+```
 processMessage(
 value => console.log(value),
 reason => console.log(reason)
 );
+```
+
 In the call to the processMessage above, the first argument is the
 resolveCallback() function, and the second argument is the
 rejectCallback() function.
@@ -3307,6 +3518,8 @@ be called. You can change one of the two variables to false to
 trigger the rejectCallback() function.
 Now that we have a working callback example, let’s rewrite the
 code using a promise as follows:
+
+```
 const isPhoneStore = true;
 const isPhoneAvailable = true;
 function processMessage() {
@@ -3332,6 +3545,8 @@ message: 'The X phone is available! How many you want to buy?',
 processMessage()
 .then(response => console.log(response))
 .catch(error => console.log(error));
+```
+
 Here, you can see that the processMessage() function returns a
 Promise object that gets resolved only when both isPhoneStore and
 isPhoneAvailable are true.
@@ -3415,36 +3630,54 @@ be executed.
 Inside the .then() and .catch() methods, you pass a callback
 function to execute when the respective methods are called. In the
 following example, we’re going to hit a dummy URL located in
+
+```
 jsonplaceholder.typicode.com:
 fetch('https://jsonplaceholder.typicode.com/todos/1')
 .then(response => console.log(response))
 .catch(error => console.log(error));
+```
+
 The code above will give the following response:
 Here, you can see that the body property contains a ReadableStream.
 To use the ReadableStream in our JavaScript application, we need to
 convert it to JSON format first, so let’s do it:
+
+```
 fetch('https://jsonplaceholder.typicode.com/todos/1')
 .then(response => response.json())
 .then(data => console.log(data))
+```
+
 The json() method converts the ReadableStream into a JavaScript
 object. The data variable above will be printed as follows:
+
+```
 {
 userId: 1,
 id: 1,
 title: "delectus aut autem",
 completed: false
 }
+```
+
 If you want to send a POST request instead of a GET request, pass
 an object containing a method property as follows:
+
+```
 fetch('https://jsonplaceholder.typicode.com/todos', {
 method: 'POST',
 }).then(response => response.json())
 .then(data => console.log(data))
+```
+
 When you send a POST method, you need to set the request header
 and body properties to ensure a smooth process.
 For the header, you need to add the Content-Type property and set
 it to application/json. The data you want to send should be put
 inside the body property in a JSON format. See the example below:
+
+```
 fetch('https://jsonplaceholder.typicode.com/todos', {
 method: 'POST',
 headers: {
@@ -3453,14 +3686,20 @@ headers: {
 body: JSON.stringify({ title: 'Learn JavaScript' }),
 }).then(response => response.json())
 .then(data => console.log(data))
+```
+
 In the example above, we send a POST request to create a new todo
 task. The title of the task is Learn JavaScript. The response from the
 typicode API would be similar as follows:
+
+```
 {
 title: 'Learn JavaScript',
 id: 201
 }
-Summary
+```
+
+<h4>Summary</h4>
 The Fetch API allows you to access APIs and perform a network
 request using standard request methods such as GET, POST, PUT,
 PATCH, and DELETE.
@@ -3470,8 +3709,8 @@ chapter.
 Here, we only see the GET and POST methods in action, but don’t
 worry because we’re going to use the rest in the following project.
 
-Chapter 16: Project 2 - Creating a
-To-do List Application
+<h2>Chapter 16: Project 2 - Creating a To-do List Application</h2>
+
 As the final project of this book, we’re going to create a To-do List
 application.
 In this application, we can add, edit, delete, and mark a task as
@@ -3480,7 +3719,9 @@ The finished application looks as follows:
 To start building this application, we need to create a simple server
 that’s going to store our task data. To do so, we need to install
 Node.js
-Installing Node.js
+
+<h4>Installing Node.js</h4>
+
 Node.js is a JavaScript runtime application that enables you to run
 JavaScript outside of the browser. We need to install this
 application on our computer to create a simple server.
@@ -3490,6 +3731,8 @@ Creating the Server and Database
 To set up this project, let’s create a new folder named todo-list.
 Open this folder in VSCode, then create a new file named db.json
 and put the following content in it:
+
+```
 {
 "tasks": [
 {
@@ -3503,7 +3746,8 @@ and put the following content in it:
 "id": 2
 }
 ]
-}
+}```
+
 This JSON file will serve as the database of our application. When
 we add a new task, this file will be updated.
 The next step is to run this JSON file as a server. To do so, you need
@@ -3519,7 +3763,11 @@ Once the installation is finished, you should see the following
 output:
 The next step is to run the json-server package. Run this command
 in your terminal:
+
+```
 json-server db.json
+```
+
 If you see the following output, it means the JSON server is running
 successfully:
 You can open the browser and access the URL at http://
@@ -3535,6 +3783,8 @@ client folder in VSCode, then create two files named index.html and
 script.js.
 Open the index.html file and write the standard HTML document
 structure just like when we create the Wizard Form:
+
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -3545,30 +3795,43 @@ structure just like when we create the Wizard Form:
 </head>
 <body></body>
 </html>
+```
+
 To focus our attention on the JavaScript part, we’re going to use
 Bootstrap to style our HTML tags. Bootstrap is a library containing
 pre-written CSS rules that you can apply to your project.
 To use Bootstrap styles, you just add specific classes to your HTML
 elements. Add Bootstrap to our project by creating a link that
 fetches the Bootstrap CSS from the CDN server as follows:
+
+```
 <title>To-do List</title>
 <link
 rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/
 bootstrap.min.css"
 />
-CDN stands for Content Delivery Network, and it’s a server that
+```
+
+<p>CDN stands for Content Delivery Network, and it’s a server that
 allows you to fetch popular libraries. By using a CDN, you don’t
 need to download the Bootstrap CSS file onto your computer and
-load it locally.
-The last step is to add the script.js file to the HTML file. As always,
+load it locally.</p>
+<p>The last step is to add the script.js file to the HTML file. As always,
 add the defer attribute so that the browser loads the script after the
-HTML document has been rendered:
+HTML document has been rendered:</p>
+
+```
 <script src="script.js" defer></script>
 </head>
+```
+
 Now we need to add some HTML to the <body> tag. First, write the
 container that’s going to contain all our HTML content. I’m going to
 add some comments to help you put the HTML in the right place:
+
+
+```
 <body>
 <div class="container m-5 rounded mx-auto bg-light shadow">
 <!-- App title section START-->
@@ -3582,9 +3845,13 @@ add some comments to help you put the HTML in the right place:
 <!-- App title section END -->
 </div>
 </body>
+```
+
 Under the 'App title section END' comment, add an input and a
 button we’re going to use to create a task. The divs around the
 input and the button is created only to apply Bootstrap style:
+
+```
 <!-- Create task section START -->
 <div class="row p-3">
 <div class="col col-11 mx-auto">
@@ -3608,8 +3875,12 @@ Add Task
 </div>
 <div class="my-2 mx-4 border-bottom"></div>
 <!-- Create task section END -->
-Next, we’re going to add the filter section under the 'Create task
-section'. This filter section will contain a select input:
+```
+
+<p>Next, we’re going to add the filter section under the 'Create task 
+section'. This filter section will contain a select input:</p>
+
+```
 <!-- Filter options section START -->
 <div class="row p-3 justify-content-end">
 <div class="col-auto d-flex align-items-center">
@@ -3623,8 +3894,11 @@ onChange="filterTasks(event)">
 </div>
 </div>
 <!-- Filter options section END -->
-The last step is to display the tasks. We’re going to use table
-element here:
+```
+
+<p>The last step is to display the tasks. We’re going to use table element here:</p>
+ 
+```
 <!-- Tasks list section START -->
 <div class="row px-5">
 <div class="col">
@@ -3658,35 +3932,39 @@ element here:
 </div>
 </div>
 <!-- Tasks list section END -->
+```
+
 And now the HTML part is completed. Right-click on the index.html
 file and select Open with Live Server to see the result.
 If you need to check your code, you can get the code used in this
 chapter
 at
-https://github.com/nathansebhastian/js-todo-list/tree/
-main/check-point-1
-Summary
+https://github.com/nathansebhastian/js-todo-list/tree/main/check-point-1
+
+<h4>Summary</h4>
 In this chapter, we’ve installed Node.js and created a simple server
 using the json-server package. The database we use in this project
 is a simple JSON file named db.json.
 We’ve also created the HTML file for our To-do application and
 used Bootstrap to style the elements.
 
-Chapter 17: Adding CRUD
-Functionalities to the Application
-Create, Read, Update, and Delete (CRUD) are four basic
+<h2>Chapter 17: Adding CRUD</h2>
+<h4>Functionalities to the Application</h4>
+<p>Create, Read, Update, and Delete (CRUD) are four basic
 functionalities that make the core of a web application. We’re going
 to learn how to implement them using JavaScript in this chapter.
 Before we start creating the functionalities for the To-do List, we
 need to edit the Live Server settings and prevent server reload
-when the db.json file changes.
-If we don’t do this, the application will be interrupted when we
-add, edit, or delete a task.
-Open the VSCode Settings menu by pressing Ctrl + , or Command +
+when the db.json file changes.</p>
+<p>If we don’t do this, the application will be interrupted when we
+add, edit, or delete a task.</p>
+<p>Open the VSCode Settings menu by pressing Ctrl + , or Command +
 , and search for 'live server ignore'. You should see the following
-output:
-Click the Edit in settings.json link, and add db.json to the Live
-Server ignore files settings as shown below:
+output:</p>
+<p>Click the Edit in settings.json link, and add db.json to the Live
+Server ignore files settings as shown below:</p>
+
+```
 "liveServer.settings.ignoreFiles": [
  "db.json",
 ".vscode/**",
@@ -3694,15 +3972,19 @@ Server ignore files settings as shown below:
 "**/*.sass",
 "**/*.ts"
 ]
-Save the changes. Now Live Server won’t reload when there’s a
-change in the db.json file.
-Use Fetch to Get and Display Tasks from the
-API
-Now that we have the database and the interface ready, the next
+```
+
+<p>Save the changes. Now Live Server won’t reload when there’s a
+change in the db.json file.</p>
+<p>Use Fetch to Get and Display Tasks from the API.</p>
+<p>Now that we have the database and the interface ready, the next
 step is to use JavaScript to get tasks data and display it in our table.
 We’re going to use the Fetch API for that.
-Open the script.js file, and write the following getTask() function:
+Open the script.js file, and write the following getTask() function:</p>
+
+```
 const BASE_API_URL = 'http://localhost:3000/tasks';
+
 function getTasks() {
 const tableElement = document.querySelector('#tasks-table');
 fetch(BASE_API_URL)
@@ -3712,6 +3994,8 @@ console.log(tasks);
 });
 }
 getTasks();
+```
+
 In the code above, we declared a constant variable to store the API
 URL we’re going to hit with requests.
 Below the constant, we created a function called getTasks() that
@@ -3723,19 +4007,28 @@ This means we successfully retrieved the tasks data. The next step
 is to display those data on our To-do List. We need to query the
 <tbody> element in our HTML page and put the tasks as rows there.
 Recall that in our previous chapter, we put the id attribute to the
+
+```
 <tbody> tag as follows:
 <tbody id="tbody-tasks">
-...
 </tbody>
+```
+
 This means we can get the element using the query selector:
+
+```
 const BASE_API_URL = 'http://localhost:3000/tasks';
 const tableElement = document.querySelector('#tbody-tasks');
+```
+
 Then we go back into the getTasks() function, remove the
 console.log() method and create table rows based on the tasks
 data.
 Below, you can see that the code for creating the elements is quite
 long, but it’s essentially the same as when we create buttons for the
 Wizard Form:
+
+```
 function getTasks() {
 let tableRows = '';
 fetch(BASE_API_URL)
@@ -3760,6 +4053,8 @@ tableRows += element;
 tableElement.innerHTML = tableRows;
 });
 }
+```
+
 In the above code, we create a variable named tableRows that starts
 as an empty string. Next, we iterate over the tasks array using the
 forEach() method, and create an element variable for each task
@@ -3778,8 +4073,10 @@ tableElement to the tableRows value.
 If you open the browser, you should see the tasks appear on the
 table like this:
 Since we’re able to display the data, we can remove the hard-coded
-<tr> elements in our index.html file. Remove the highlighted lines
+&lt;tr&gt; elements in our index.html file. Remove the highlighted lines
 below:
+
+```
 <!-- remove this from index.html -->
 <tr>
 ... Learn JavaScript ...
@@ -3787,17 +4084,27 @@ below:
 <tr>
 ... Learn HTML ...
 </tr>
+```
+
 Now that we successfully displayed the data, the next step is to
 enable adding a new task to the database.
+
 Adding a New Task
+
 To add a new task to the database, we need to define the addTask()
 function that has been defined in the previous chapter for the 'Add
 Task' button:
+
+```
 <button type="button" class="btn btn-primary" onClick="addTask()">
 Add Task
 </button>
+```
+
 Back to the script.js file, create a new function named addTask()
 and write the following code into it:
+
+```
 function addTask() {
 const taskTitle = document.querySelector('#task-title');
 const data = {
@@ -3818,6 +4125,8 @@ taskTitle.value = '';
 }
 });
 }
+```
+
 First, we query the input text, which has an id of task-title, then
 we create an object called data that stores the title and completed
 status of the task.
@@ -3834,6 +4143,8 @@ Deleting a Task
 To delete a task from the database, we need to define the
 deleteTask() function in our script.js file. Here’s the function in
 full:
+
+```
 function deleteTask(id) {
 const confirmation = confirm('Are you sure you want to delete the
 task?');
@@ -3848,6 +4159,8 @@ getTasks();
 });
 }
 }
+```
+
 First, we confirm the decision to delete the task with the user using
 the confirm() function, which is part of the browser API.
 When the user confirms, we send a DELETE request using the
@@ -3908,22 +4221,22 @@ Create a toggleTask() function in the script.js file as shown below:
 
 ```
 function toggleTask(event, id) {
-const checked = event.target.checked;
-const data = {
-completed: checked,
-};
-fetch(BASE_API_URL + '/' + id, {
-method: 'PATCH',
-headers: {
-'Content-Type': 'application/json',
-},
-body: JSON.stringify(data),
-}).then(response => {
- if (response.ok && checked) {
-alert('Hurray! You finished the task');
-}
-getTasks();
-});
+  const checked = event.target.checked;
+  const data = {
+    completed: checked,
+  };
+  fetch(BASE_API_URL + '/' + id, {
+  method: 'PATCH',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(data),
+  }).then(response => {
+    if (response.ok && checked) {
+    alert('Hurray! You finished the task');
+  }
+    getTasks();
+  });
 }
 ```
 
@@ -3999,7 +4312,7 @@ your code with mine at https://github.com/nathansebhastian/js-
 todo-list/tree/main/check-point-2
 or email me at nathan@codewithnathan.com
 
-Summary
+<h4>Summary<>/h4>
 Well done! You’ve just finished your second JavaScript project.
 Hopefully, this project has shown you how JavaScript is the secret
 ingredient that makes a web application interactive.
